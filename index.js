@@ -11,6 +11,7 @@ const port = 2000;
 var bdURL = 'mongodb://127.0.0.1:27017/LibraryDB';
 mongoose.connect(bdURL);
 
+
 mongoose.connection.on('connected', function () {
     console.log("Conexion a mongo realizada en: " + bdURL);
 });
